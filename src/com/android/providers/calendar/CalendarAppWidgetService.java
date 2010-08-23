@@ -355,7 +355,7 @@ public class CalendarAppWidgetService extends Service implements Runnable {
                 DateUtils.LENGTH_MEDIUM).toUpperCase();
 
         views.setTextViewText(R.id.day_of_week, dayOfWeek);
-        views.setTextViewText(R.id.day_of_month, Integer.toString(time.monthDay));
+        views.setTextViewText(R.id.day_of_month, String.format("%Ld", time.monthDay));
 
         // Fill primary event details
         cursor.moveToPosition(events.primaryRow);
