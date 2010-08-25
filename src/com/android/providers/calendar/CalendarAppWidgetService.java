@@ -352,7 +352,7 @@ public class CalendarAppWidgetService extends Service implements Runnable {
 
         // Calendar header
         String dayOfWeek = DateUtils.getDayOfWeekString(time.weekDay + 1,
-                DateUtils.LENGTH_MEDIUM).toUpperCase();
+                DateUtils.LENGTH_LONG).toUpperCase();
 
         views.setTextViewText(R.id.day_of_week, dayOfWeek);
         views.setTextViewText(R.id.day_of_month, String.format("%Ld", time.monthDay));
