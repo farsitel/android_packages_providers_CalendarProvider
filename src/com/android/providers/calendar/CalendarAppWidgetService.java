@@ -345,17 +345,18 @@ public class CalendarAppWidgetService extends Service implements Runnable {
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.agenda_appwidget);
         setNoEventsVisible(views, false);
 
-        Time time = new Time();
+        Time time = new Time(context);
         time.setToNow();
         int yearDay = time.yearDay;
         int dateNumber = time.monthDay;
 
         // Calendar header
-        String dayOfWeek = DateUtils.getDayOfWeekString(time.weekDay + 1,
-                DateUtils.LENGTH_LONG).toUpperCase();
+        String mDayOfWeekFormat = context.getString(R.string.gadget_day_of_week_format);
+        String dayOfWeek = time.format(mDayOfWeekFormat).toUpperCase();
+        String monthDay = time.format("%d");
 
         views.setTextViewText(R.id.day_of_week, dayOfWeek);
-        views.setTextViewText(R.id.day_of_month, String.format("%Ld", time.monthDay));
+        views.setTextViewText(R.id.day_of_month, monthDay);
 
         // Fill primary event details
         cursor.moveToPosition(events.primaryRow);

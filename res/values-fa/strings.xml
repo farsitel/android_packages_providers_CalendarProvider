@@ -57,4 +57,7 @@
     <!-- What to show in messaging that refers to this provider, e.g. AccountSyncSettings -->
     <string name="provider_label">تقویم</string>
 
+    <!-- Format of the day of week, the header of the gadget. %a for Sun, %A for Sunday -->
+    <string name="gadget_day_of_week_format">%A</string>
+
 </resources>
