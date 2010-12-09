@@ -31,13 +31,13 @@
     <!-- Shown in gadget when additional events are available for display, but no room remaining -->
     <plurals name="gadget_more_events">
         <!-- additional events message for 1 event -->
-        <item quantity="one">۱ رویداد دیگر</item>
+        <item quantity="one">یک رویداد دیگر</item>
         <!-- additional events message for multiple events -->
-        <item quantity="other"><xliff:g id="number">%d</xliff:g> رویداد دیگر</item>
+        <item quantity="other"><xliff:g id="number">%Ld</xliff:g> رویداد دیگر</item>
     </plurals>
 
     <!-- Caption to show on gadget when there are no upcoming calendar events -->
-    <string name="gadget_no_events">رویداد جدیدی موجود نیست.</string>
+    <string name="gadget_no_events">فعلاً رویدادی ندارید.</string>
 
     <!-- Caption on secret calendar info -->
     <string name="calendar_info">اطلاعات تقویم</string>
@@ -46,13 +46,13 @@
     <string name="calendar_info_error">خطا</string>
 
     <!-- No calendars message for secret calendar info -->
-    <string name="calendar_info_no_calendars">تقویمی وجود ندارد</string>
+    <string name="calendar_info_no_calendars">تقویمی وجود ندارد.</string>
 
     <!-- Event count message for secret calendar info -->
-    <string name="calendar_info_events">رویدادها: <xliff:g id = "events">%1$d</xliff:g></string>
+    <string name="calendar_info_events">رویدادها: <xliff:g id = "events">%1$Ld</xliff:g></string>
 
     <!-- Event and dirty event count message for secret calendar info -->
-    <string name="calendar_info_events_dirty">رویدادها: <xliff:g id = "events">%1$d</xliff:g>، ذخیره نشده: <xliff:g id = "dirty events">%2$d</xliff:g></string>
+    <string name="calendar_info_events_dirty">رویدادها: <xliff:g id = "events">%1$Ld</xliff:g>، ذخیره‌نشده: <xliff:g id = "dirty events">%2$Ld</xliff:g></string>
 
     <!-- What to show in messaging that refers to this provider, e.g. AccountSyncSettings -->
     <string name="provider_label">تقویم</string>
